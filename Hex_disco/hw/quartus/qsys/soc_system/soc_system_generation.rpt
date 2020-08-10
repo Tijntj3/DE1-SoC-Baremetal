@@ -1,0 +1,258 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=/home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading qsys/soc_system.qsys
+Progress: Reading input file
+Progress: Adding buttons_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module buttons_0
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hex_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_0
+Progress: Adding hex_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_1
+Progress: Adding hex_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_2
+Progress: Adding hex_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_3
+Progress: Adding hex_4 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_4
+Progress: Adding hex_5 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_5
+Progress: Adding hps_0 [altera_hps 20.1]
+Progress: Parameterizing module hps_0
+Progress: Adding leds_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module leds_0
+Progress: Adding switches_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module switches_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system.buttons_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: soc_system.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: soc_system.switches_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system: Generating soc_system "soc_system" for SIM_VHDL
+Info: buttons_0: Starting RTL generation for module 'soc_system_buttons_0'
+Info: buttons_0:   Generation command is [exec /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/bin/perl -I /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/lib -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin/europa -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_buttons_0 --dir=/tmp/alt8472_2418425673235702361.dir/0002_buttons_0_gen/ --quartus_dir=/home/tijmen/intelFPGA/20.1/quartus --vhdl --config=/tmp/alt8472_2418425673235702361.dir/0002_buttons_0_gen//soc_system_buttons_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt8472_2418425673235702361.dir/0002_buttons_0_gen/  ]
+Info: buttons_0: Done RTL generation for module 'soc_system_buttons_0'
+Info: buttons_0: "soc_system" instantiated altera_avalon_pio "buttons_0"
+Info: hex_0: Starting RTL generation for module 'soc_system_hex_0'
+Info: hex_0:   Generation command is [exec /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/bin/perl -I /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/lib -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin/europa -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_hex_0 --dir=/tmp/alt8472_2418425673235702361.dir/0003_hex_0_gen/ --quartus_dir=/home/tijmen/intelFPGA/20.1/quartus --vhdl --config=/tmp/alt8472_2418425673235702361.dir/0003_hex_0_gen//soc_system_hex_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt8472_2418425673235702361.dir/0003_hex_0_gen/  ]
+Info: hex_0: Done RTL generation for module 'soc_system_hex_0'
+Info: hex_0: "soc_system" instantiated altera_avalon_pio "hex_0"
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: leds_0: Starting RTL generation for module 'soc_system_leds_0'
+Info: leds_0:   Generation command is [exec /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/bin/perl -I /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/lib -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin/europa -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_leds_0 --dir=/tmp/alt8472_2418425673235702361.dir/0004_leds_0_gen/ --quartus_dir=/home/tijmen/intelFPGA/20.1/quartus --vhdl --config=/tmp/alt8472_2418425673235702361.dir/0004_leds_0_gen//soc_system_leds_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt8472_2418425673235702361.dir/0004_leds_0_gen/  ]
+Info: leds_0: Done RTL generation for module 'soc_system_leds_0'
+Info: leds_0: "soc_system" instantiated altera_avalon_pio "leds_0"
+Info: switches_0: Starting RTL generation for module 'soc_system_switches_0'
+Info: switches_0:   Generation command is [exec /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/bin/perl -I /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/lib -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin/europa -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_switches_0 --dir=/tmp/alt8472_2418425673235702361.dir/0005_switches_0_gen/ --quartus_dir=/home/tijmen/intelFPGA/20.1/quartus --vhdl --config=/tmp/alt8472_2418425673235702361.dir/0005_switches_0_gen//soc_system_switches_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt8472_2418425673235702361.dir/0005_switches_0_gen/  ]
+Info: switches_0: Done RTL generation for module 'soc_system_switches_0'
+Info: switches_0: "soc_system" instantiated altera_avalon_pio "switches_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: switches_0_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "switches_0_s1_translator"
+Info: hps_0_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_axi_master_agent"
+Info: switches_0_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "switches_0_s1_agent"
+Info: switches_0_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "switches_0_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: hps_0_h2f_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_axi_master_wr_limiter"
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/altera_avalon_sc_fifo.v
+Info: switches_0_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "switches_0_s1_burst_adapter"
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/verbosity_pkg.sv
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/avalon_utilities_pkg.sv
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/avalon_mm_pkg.sv
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/altera_avalon_mm_slave_bfm.sv
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/altera_avalon_interrupt_sink.sv
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/altera_avalon_clock_source.sv
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/submodules/altera_avalon_reset_source.sv
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: soc_system: Done "soc_system" with 25 modules, 52 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/soc_system.spd --output-directory=/home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/soc_system.spd --output-directory=/home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	25 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system.qsys --block-symbol-file --output-directory=/home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading qsys/soc_system.qsys
+Progress: Reading input file
+Progress: Adding buttons_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module buttons_0
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hex_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_0
+Progress: Adding hex_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_1
+Progress: Adding hex_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_2
+Progress: Adding hex_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_3
+Progress: Adding hex_4 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_4
+Progress: Adding hex_5 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_5
+Progress: Adding hps_0 [altera_hps 20.1]
+Progress: Parameterizing module hps_0
+Progress: Adding leds_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module leds_0
+Progress: Adding switches_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module switches_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system.buttons_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: soc_system.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: soc_system.switches_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system.qsys --synthesis=VHDL --output-directory=/home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading qsys/soc_system.qsys
+Progress: Reading input file
+Progress: Adding buttons_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module buttons_0
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hex_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_0
+Progress: Adding hex_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_1
+Progress: Adding hex_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_2
+Progress: Adding hex_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_3
+Progress: Adding hex_4 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_4
+Progress: Adding hex_5 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_5
+Progress: Adding hps_0 [altera_hps 20.1]
+Progress: Parameterizing module hps_0
+Progress: Adding leds_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module leds_0
+Progress: Adding switches_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module switches_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system.buttons_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: soc_system.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: soc_system.switches_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system: Generating soc_system "soc_system" for QUARTUS_SYNTH
+Info: buttons_0: Starting RTL generation for module 'soc_system_buttons_0'
+Info: buttons_0:   Generation command is [exec /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/bin/perl -I /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/lib -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin/europa -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_buttons_0 --dir=/tmp/alt8472_2418425673235702361.dir/0023_buttons_0_gen/ --quartus_dir=/home/tijmen/intelFPGA/20.1/quartus --verilog --config=/tmp/alt8472_2418425673235702361.dir/0023_buttons_0_gen//soc_system_buttons_0_component_configuration.pl  --do_build_sim=0  ]
+Info: buttons_0: Done RTL generation for module 'soc_system_buttons_0'
+Info: buttons_0: "soc_system" instantiated altera_avalon_pio "buttons_0"
+Info: hex_0: Starting RTL generation for module 'soc_system_hex_0'
+Info: hex_0:   Generation command is [exec /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/bin/perl -I /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/lib -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin/europa -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_hex_0 --dir=/tmp/alt8472_2418425673235702361.dir/0024_hex_0_gen/ --quartus_dir=/home/tijmen/intelFPGA/20.1/quartus --verilog --config=/tmp/alt8472_2418425673235702361.dir/0024_hex_0_gen//soc_system_hex_0_component_configuration.pl  --do_build_sim=0  ]
+Info: hex_0: Done RTL generation for module 'soc_system_hex_0'
+Info: hex_0: "soc_system" instantiated altera_avalon_pio "hex_0"
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: leds_0: Starting RTL generation for module 'soc_system_leds_0'
+Info: leds_0:   Generation command is [exec /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/bin/perl -I /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/lib -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin/europa -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_leds_0 --dir=/tmp/alt8472_2418425673235702361.dir/0025_leds_0_gen/ --quartus_dir=/home/tijmen/intelFPGA/20.1/quartus --verilog --config=/tmp/alt8472_2418425673235702361.dir/0025_leds_0_gen//soc_system_leds_0_component_configuration.pl  --do_build_sim=0  ]
+Info: leds_0: Done RTL generation for module 'soc_system_leds_0'
+Info: leds_0: "soc_system" instantiated altera_avalon_pio "leds_0"
+Info: switches_0: Starting RTL generation for module 'soc_system_switches_0'
+Info: switches_0:   Generation command is [exec /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/bin/perl -I /home/tijmen/intelFPGA/20.1/quartus/linux64/perl/lib -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin/europa -I /home/tijmen/intelFPGA/20.1/quartus/sopc_builder/bin -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/tijmen/intelFPGA/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_switches_0 --dir=/tmp/alt8472_2418425673235702361.dir/0026_switches_0_gen/ --quartus_dir=/home/tijmen/intelFPGA/20.1/quartus --verilog --config=/tmp/alt8472_2418425673235702361.dir/0026_switches_0_gen//soc_system_switches_0_component_configuration.pl  --do_build_sim=0  ]
+Info: switches_0: Done RTL generation for module 'soc_system_switches_0'
+Info: switches_0: "soc_system" instantiated altera_avalon_pio "switches_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: switches_0_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "switches_0_s1_translator"
+Info: hps_0_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_axi_master_agent"
+Info: switches_0_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "switches_0_s1_agent"
+Info: switches_0_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "switches_0_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: hps_0_h2f_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_axi_master_wr_limiter"
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: switches_0_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "switches_0_s1_burst_adapter"
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/tijmen/Documents/Baremetal_Hex_Disco/hw/quartus/qsys/soc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: soc_system: Done "soc_system" with 25 modules, 82 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

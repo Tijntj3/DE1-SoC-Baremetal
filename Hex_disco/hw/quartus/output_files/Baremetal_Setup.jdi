@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="66133186880479fafde6"/>
+  </project>
+  <file_info>
+    <file device="5CSEMA5F31C6" path="Baremetal_Setup.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="soc_system:soc_system_inst" name="soc_system_inst">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME soc_system HAS_SOPCINFO 1 GENERATION_ID 1596025187"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>
