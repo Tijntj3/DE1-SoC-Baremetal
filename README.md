@@ -128,6 +128,7 @@ The AXI bridge used for this demo is configured through Quartus Prime's Platfrom
 | BUTTONS | 0x60 | 0x6F |
 | LEDS | 0x70 | 0x7F |
 | SWITCHES | 0x80 | 0x8F |
+
 *Note that these addresses are on top of the base AXI address of 0xC0000000*
 
-These addresses can also be found in the ```Hex_disco/sw/hps/application/inc/hps_soc_system.h``` header file.
+These addresses can also be found in the ```Hex_disco/sw/hps/application/inc/hps_soc_system.h``` header file. The full address map of the CORTEX A9 can be found [here](https://www.intel.com/content/www/us/en/programmable/hps/cyclone-v/hps.html).
