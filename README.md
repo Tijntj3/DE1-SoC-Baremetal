@@ -115,7 +115,7 @@ After these steps, one should be able to build and debug the demo project above
 
 ## AXI bridge
 
-The AXI bridge used for this demo is configured through Quartus Prime's Platfrom designer (QSYS for older versions) using the ```Aria V/Cyclone V Hard Processor System``` and ```PIO``` IPs. Were one to make their own HPS application using this demo as a reference, these are the addresses at which the peripherals are located:
+The AXI bridge used for this demo is configured through Quartus Prime's Platfrom designer (QSYS for older versions) using the ```Aria V/Cyclone V Hard Processor System``` and ```PIO``` IPs. If one were to make their own HPS application using this demo as a reference, these are the addresses at which the peripherals are located:
 
 | Peripherals | Start address | End address |
 | ------ | ------ | ------ |
