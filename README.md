@@ -20,7 +20,7 @@ The Hex_disco project provided with this guide aims to be a demonstration of con
 
 The simplified steps needed to be taken in order to run this demo are:
 
-1. Configure the HPS and setup the AXI bridge between the HPS and FPGA by means of a FPGA program
+1. Configure the HPS and setup the AXI bridge between the HPS and FPGA by means of a FPGA configuration file
 2. Setup a U-boot preloader on the HPS that initializes RAM and loads/runs the C application from it
 
 The more detailed instructions of how to run this demo are shown in the next chapter.
@@ -28,7 +28,7 @@ The more detailed instructions of how to run this demo are shown in the next cha
 ## Installation
 
 It is strongly recommended to use Linux. If any changes want to be made to the hardware configuration, a new version of U-Boot will have to be generated, which can only be done on Linux.
-For this project a Windwos hosted VM of Ubuntu 18.04 LTS was used.
+For this project a Windows hosted VM of Ubuntu 18.04 LTS was used.
 
 ### Set-up the DE1-SoC board
 
@@ -44,7 +44,7 @@ To enable this, set the MSEL pins on the back of the board as following:
 | SW10.5 | MSEL4 | Use these pins to set the FPGA Configuration scheme | OFF ("1") |
 | SW10.6 | N/A | N/A | N/A |
 
-The USB-Blaster II interface is the only connection to the board that is needed.
+The USB-Blaster II interface is the only connection to the board that is needed for this demo.
 
 ### Install Ubuntu dependencies
 
@@ -55,7 +55,7 @@ sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install -y gcc make perl git flex bison
 ```
 
-Check whether your system architecture is ```i1386```, if not, change the following command accordingly
+Check whether the system architecture is ```i386```, if not, change the following command accordingly
 
 ```sh
 dpkg --print-foreign-architectures
@@ -74,7 +74,7 @@ git pull https://github.com/Tijntj3/DE1-SoC-Baremetal
 
 ### Program FPGA
 
-As mentioned at the beginning of this guide, the FGPA can both be programmed in a volatile way and non-volatile way.
+As mentioned at the beginning of this guide, the FGPA can both be programmed in a volatile way and a non-volatile way.
 To program the FPGA on a non-volatile way, you will need to convert the .SOF file found in ```Hex_disco/hw/quartus/output_files/Baremetal_Setup.sof``` to a .JIC file. This can be done in Quartus with the "Convert programming file" option.
 
 To program the FPGA using the .SOF file, open the existing Quartus project and open the programmer (Tools > Programmer)
@@ -129,6 +129,6 @@ The AXI bridge used for this demo is configured through Quartus Prime's Platfrom
 | LEDS | 0x70 | 0x7F |
 | SWITCHES | 0x80 | 0x8F |
 
-*Note that these addresses are on top of the base AXI address of 0xC0000000*
+*Note that these addresses are relative to the base AXI address of 0xC0000000*
 
 These addresses can also be found in the ```Hex_disco/sw/hps/application/inc/hps_soc_system.h``` header file. The full address map of the CORTEX A9 can be found [here](https://www.intel.com/content/www/us/en/programmable/hps/cyclone-v/hps.html).
